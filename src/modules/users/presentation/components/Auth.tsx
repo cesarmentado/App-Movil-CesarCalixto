@@ -1,8 +1,9 @@
 
-import { supabase } from '@/lib/supabase'
+
 import { useState } from 'react'
 import { Alert, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { appStyles } from '../styles/styles'
+import { supabase } from '@/lib/supabase'
 
 export default function Auth() {
   const [email, setEmail] = useState('')

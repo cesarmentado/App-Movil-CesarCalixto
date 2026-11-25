@@ -1,19 +1,9 @@
 
 import { useEffect, useState } from "react";
-import {
-    ActivityIndicator,
-    Alert,
-    FlatList,
-    Pressable,
-    StyleSheet,
-    Text,
-    View,
-} from "react-native";
+import { ActivityIndicator, Alert, FlatList, Pressable, StyleSheet, Text, View, } from "react-native";
 
 import { Note } from "../domain/note.entity";
-import {
-    create, deleteNote, getAllNotes, update,
-} from "../infraestructure/notes.datasource";
+import { create, deleteNote, getAllNotes, update, } from "../infraestructure/notes.datasource";
 
 import { NoteCard } from "./components/NoteCard";
 import { NoteForm } from "./components/NoteForm";
@@ -59,11 +49,7 @@ export function NotesView() {
     const onSaveNote = async (title: string, description: string) => {
         try {
             if (noteSelected) {
-                await update({
-                    ...noteSelected,
-                    title,
-                    description,
-                });
+                await update({...noteSelected, title, description, });
             } else {
                 await create(title, description);
             }

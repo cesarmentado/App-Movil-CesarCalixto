@@ -1,13 +1,6 @@
 
 import { useEffect, useState } from "react";
-import {
-    Alert,
-    Pressable,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput
-} from "react-native";
+import { Alert,Pressable,ScrollView,StyleSheet,Text,TextInput} from "react-native";
 import { Note } from "../../domain/note.entity";
 
 interface Props {

@@ -1,6 +1,4 @@
 
-// Data Source para Notes
-// Con Supabase
 
 import { supabase } from "../../../lib/supabase";
 import { Note } from "../domain/note.entity";
